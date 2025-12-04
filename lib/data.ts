@@ -1,36 +1,49 @@
-export const albums = [
-    {
-        title: "Midnight Love",
-        cover: "/assets/textures/cd_placeholder.png",
-        tracks: ["Intro", "Don't Go", "Summer Rain", "Voicemail"]
+export const artistData = {
+    name: "Ray Marcus",
+    bio: "Digital native exploring the boundaries between 2000s nostalgia and futuristic soundscapes. Creating audio-visual experiences that transport you to a simpler, glitchier time.",
+    socials: {
+        instagram: "https://instagram.com/raymarcus",
+        spotify: "https://spotify.com/artist/raymarcus",
+        youtube: "https://youtube.com/raymarcus",
     },
-    {
-        title: "Phone Calls at 2AM",
-        cover: "/assets/textures/cd_placeholder.png",
-        tracks: ["Confession", "What If", "Afterthought", "Fade Out"]
-    },
-    {
-        title: "Unsent Letters",
-        cover: "/assets/textures/cd_placeholder.png",
-        tracks: ["Dear You", "Ink Stains", "Postage", "Return to Sender"]
-    }
-];
+    releases: [
+        {
+            id: "neon-nights",
+            title: "Neon Nights",
+            year: "2024",
+            cover: "/textures/cover-neon.svg",
+            link: "#",
+        },
+        {
+            id: "digital-love",
+            title: "Digital Love",
+            year: "2023",
+            cover: "/textures/cover-digital.svg",
+            link: "#",
+        },
+        {
+            id: "cyber-heart",
+            title: "Cyber Heart",
+            year: "2023",
+            cover: "/textures/cover-cyber.svg",
+            link: "#",
+        },
+    ],
+    videos: [
+        {
+            id: "glitch-mode",
+            title: "Glitch Mode",
+            thumbnail: "/textures/thumb-glitch.jpg",
+            url: "#",
+        },
+        {
+            id: "system-failure",
+            title: "System Failure",
+            thumbnail: "/textures/thumb-system.jpg",
+            url: "#",
+        },
+    ],
+};
 
-export const videos = [
-    {
-        title: "Fake Video 1",
-        url: "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        title: "Fake Video 2",
-        url: "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        title: "Fake Video 3",
-        url: "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    }
-];
-
-export const instagram = "https://instagram.com/raymarcusmusic";
-
-export const bio = "Ray Marcus is an emerging R&B artist with a nostalgic sound and emotional storytelling. This is placeholder text for the MVP concept.";
+export type Release = typeof artistData.releases[0];
+export type Video = typeof artistData.videos[0];

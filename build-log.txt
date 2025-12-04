@@ -1,0 +1,198 @@
+﻿
+> ray-marcus-website@0.1.0 build
+> next build
+
+   Γû▓ Next.js 15.0.3
+
+   Creating an optimized production build ...
+node.exe :  ΓÜá Compiled 
+with warnings
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" "C:\
+Users\Ruth\AppData\Roaming\
+n ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: ( ΓÜ  
+  á Compiled with warnin   
+ gs:String) [], RemoteE    
+xception
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+
+./node_modules/@react-three
+/drei/core/Effects.js
+Attempted import error: 
+'sRGBEncoding' is not 
+exported from 'three' 
+(imported as 
+'sRGBEncoding').
+
+Import trace for requested 
+module:
+./node_modules/@react-three
+/drei/core/Effects.js
+./node_modules/@react-three
+/drei/index.js
+./components/canvas/Scene.t
+sx
+./app/page.tsx
+
+./node_modules/troika-three
+-text/dist/troika-three-tex
+t.esm.js
+Attempted import error: 
+'PlaneBufferGeometry' is 
+not exported from 'three' 
+(imported as 
+'PlaneBufferGeometry').
+
+Import trace for requested 
+module:
+./node_modules/troika-three
+-text/dist/troika-three-tex
+t.esm.js
+./node_modules/@react-three
+/drei/core/Text.js
+./node_modules/@react-three
+/drei/index.js
+./components/canvas/Scene.t
+sx
+./app/page.tsx
+
+./node_modules/troika-three
+-utils/dist/troika-three-ut
+ils.esm.js
+Attempted import error: 
+'CylinderBufferGeometry' 
+is not exported from 
+'three' (imported as 
+'CylinderBufferGeometry').
+
+Import trace for requested 
+module:
+./node_modules/troika-three
+-utils/dist/troika-three-ut
+ils.esm.js
+./node_modules/troika-three
+-text/dist/troika-three-tex
+t.esm.js
+./node_modules/@react-three
+/drei/core/Text.js
+./node_modules/@react-three
+/drei/index.js
+./components/canvas/Scene.t
+sx
+./app/page.tsx
+
+ ΓÜá Compiled with warnings
+
+./node_modules/@react-three
+/drei/core/Effects.js
+Attempted import error: 
+'sRGBEncoding' is not 
+exported from 'three' 
+(imported as 
+'sRGBEncoding').
+
+Import trace for requested 
+module:
+./node_modules/@react-three
+/drei/core/Effects.js
+./node_modules/@react-three
+/drei/index.js
+./components/canvas/Scene.t
+sx
+./app/page.tsx
+
+./node_modules/troika-three
+-text/dist/troika-three-tex
+t.esm.js
+Attempted import error: 
+'PlaneBufferGeometry' is 
+not exported from 'three' 
+(imported as 
+'PlaneBufferGeometry').
+
+Import trace for requested 
+module:
+./node_modules/troika-three
+-text/dist/troika-three-tex
+t.esm.js
+./node_modules/@react-three
+/drei/core/Text.js
+./node_modules/@react-three
+/drei/index.js
+./components/canvas/Scene.t
+sx
+./app/page.tsx
+
+./node_modules/troika-three
+-utils/dist/troika-three-ut
+ils.esm.js
+Attempted import error: 
+'CylinderBufferGeometry' 
+is not exported from 
+'three' (imported as 
+'CylinderBufferGeometry').
+
+Import trace for requested 
+module:
+./node_modules/troika-three
+-utils/dist/troika-three-ut
+ils.esm.js
+./node_modules/troika-three
+-text/dist/troika-three-tex
+t.esm.js
+./node_modules/@react-three
+/drei/core/Text.js
+./node_modules/@react-three
+/drei/index.js
+./components/canvas/Scene.t
+sx
+./app/page.tsx
+
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+
+./components/canvas/Room.tsx
+200:17  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/building-your-application/configuring/eslint#disabling-rules
+Failed to compile.
+
+./components/canvas/CameraR
+ig.tsx:3:10
+Type error: Module 
+'"@react-three/fiber"' has 
+no exported member 
+'useFrame'.
+
+[0m [90m 1 |[39m 
+[32m"use 
+client"[39m[33m;[39m[0m
+[0m [90m 2 |[39m[0m
+[0m[31m[1m>[22m[39m[9
+0m 3 |[39m 
+[36mimport[39m { 
+useFrame[33m,[39m 
+useThree } [36mfrom[39m 
+[32m"@react-three/fiber"[3
+9m[33m;[39m[0m
+[0m [90m   |[39m        
+  [31m[1m^[22m[39m[0m
+[0m [90m 4 |[39m 
+[36mimport[39m { easing 
+} [36mfrom[39m [32m"maat
+h"[39m[33m;[39m[0m
+[0m [90m 5 |[39m 
+[36mimport[39m 
+[33m*[39m [36mas[39m 
+[33mTHREE[39m 
+[36mfrom[39m [32m"three"
+[39m[33m;[39m[0m
+[0m [90m 6 |[39m[0m

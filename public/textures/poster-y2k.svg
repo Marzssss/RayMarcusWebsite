@@ -1,0 +1,7 @@
+<svg width="512" height="768" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#000000" />
+  <circle cx="256" cy="384" r="200" fill="#333333" />
+  <path d="M 256 100 L 300 300 L 500 384 L 300 468 L 256 668 L 212 468 L 12 384 L 212 300 Z" fill="#00ff00" opacity="0.8" />
+  <text x="50%" y="80%" font-family="Impact, sans-serif" font-size="80" fill="#ff00ff" text-anchor="middle" style="text-shadow: 4px 4px 0px #fff;">Y2K</text>
+  <text x="50%" y="90%" font-family="Impact, sans-serif" font-size="40" fill="#ffffff" text-anchor="middle">FOREVER</text>
+</svg>

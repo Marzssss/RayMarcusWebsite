@@ -1,17 +1,19 @@
 import { create } from 'zustand';
 
-type ModalType = "none" | "album" | "video" | "bio";
-
-interface AppState {
-    modal: ModalType;
-    selectedIndex: number;
-    openModal: (type: ModalType, index?: number) => void;
-    closeModal: () => void;
+interface State {
+    activeSection: string | null;
+    isMenuOpen: boolean;
+    openSection: (section: string) => void;
+    closeSection: () => void;
+    toggleMenu: () => void;
+    setMenuOpen: (isOpen: boolean) => void;
 }
 
-export const useStore = create<AppState>((set) => ({
-    modal: "none",
-    selectedIndex: 0,
-    openModal: (type, index = 0) => set({ modal: type, selectedIndex: index }),
-    closeModal: () => set({ modal: "none" }),
+export const useStore = create<State>((set) => ({
+    activeSection: null,
+    isMenuOpen: false,
+    openSection: (section) => set({ activeSection: section, isMenuOpen: false }),
+    closeSection: () => set({ activeSection: null }),
+    toggleMenu: () => set((state) => ({ isMenuOpen: !state.isMenuOpen })),
+    setMenuOpen: (isOpen) => set({ isMenuOpen: isOpen }),
 }));
