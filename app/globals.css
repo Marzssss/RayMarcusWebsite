@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: var(--foreground);
+  background: linear-gradient(135deg, #1a0a1a 0%, #0d0515 50%, #0a0a1a 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Smooth scrolling disabled for 3D experience */
+html {
+  scroll-behavior: auto;
+}
+
+/* Mobile touch optimization */
+canvas {
+  touch-action: none;
+  -webkit-touch-callout: none;
+}
+
+/* Custom scrollbar for modals */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 105, 180, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff69b4, #9370db);
+  border-radius: 3px;
+}
+
+/* Prevent text selection on interactive elements */
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Loading animation */
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 40px rgba(255, 105, 180, 0.6);
+  }
+}
+
+.glow-pulse {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Star twinkle effect for decorations */
+@keyframes twinkle {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+}
+
+.twinkle {
+  animation: twinkle 2s ease-in-out infinite;
+}
